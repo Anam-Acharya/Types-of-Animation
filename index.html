@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Animation</title>
+    <style>
+        body{
+            background-color: #001d3d;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px black;
+            height: auto;
+            width: 50%;
+            background-color: white;
+        }
+        .h1{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            font-size: 40px;
+        }
+        #box1{
+            color: white;
+            width: 10%;
+            text-align: center;
+            padding: 5px;
+            background-color: #5f0f40;
+            margin: 10px;
+            position: relative;
+            left: 30px;
+            animation-name: box1ani;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+            @keyframes box1ani{
+                from{left: 30px;}
+                to{left: 510px;}
+            }
+        #box2{
+            color: white;
+            width: 10%;
+            text-align: center;
+            padding: 5px;
+            background-color: #9a031e;
+            margin: 10px;
+            position: relative;
+            left: 30px;
+            animation-name: box2ani;
+            animation-duration: 4s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes box2ani{
+            form{left: 30px;}
+            to{left: 510px;}
+        }
+        #box3{
+            color: white;
+            width: 10%;
+            text-align: center;
+            padding: 5px;
+            background-color: #fb8b24;
+            margin: 10px;
+            position: relative;
+            left: 30px;
+            animation-name: box3ani;
+            animation-duration: 4s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes box3ani{
+            form{left: 30px;}
+            to{left: 510px;}
+        }
+        #box4{
+            color: black;
+            width: 15%;
+            text-align: center;
+            padding: 5px;
+            background-color: #c8b6ff;
+            margin: 10px;
+            position: relative;
+            left: 30px;
+            animation-name: box4ani;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes box4ani{
+            form{left: 30px;}
+            to{left: 490px;}
+        }
+        #box5{
+            color: white;
+            width: 10%;
+            text-align: center;
+            padding: 5px;
+            background-color: #0f4c5c;
+            margin: 10px;
+            position: relative;
+            left: 30px;
+            animation-name: box5ani;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes box5ani{
+            form{left: 30px;}
+            to{left: 490px;}
+        }
+        #box6{
+            color: white;
+            width: 10%;
+            text-align: center;
+            padding: 5px;
+            background-color: #99582a;
+            margin: 10px;
+            position: relative;
+            left: 30px;
+            animation-name: box6ani;
+            animation-duration: 4s;
+            animation-timing-function: steps(5);
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes box6ani{
+            form{left: 30px;}
+            to{left: 550px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="h1">Types of Animation</div><hr>
+        <div id="box1">Ease</div>
+        <div id="box2">Ease In</div>
+        <div id="box3">Ease Out</div>
+        <div id="box4">Ease In Out</div>
+        <div id="box5">Liner</div>
+        <div id="box6">Steps</div><br>
+    </div>  
+</body>
+</html>
